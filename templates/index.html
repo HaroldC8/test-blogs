@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HaroldC8</title>
+        <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet">
+    </head>
+    <body>
+        <h1>HaroldC8</h1>
+        <h2>HaroldC8</h2>
+
+        <ul>
+        {% for page in blog_pages %}
+        <li> <a href="post/{{page}}"> {{page}} </a></li>
+        {% endfor %}
+        </ul>
+
+        <div>
+
+            # Hello world
+            - Me
+            - You
+
+        </div>
+    </body>
+</html>
