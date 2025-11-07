@@ -8,20 +8,11 @@
     </head>
     <body>
         <h1>HaroldC8</h1>
-        <h2>HaroldC8</h2>
 
         <ul>
-        {% for page in blog_pages %}
-        <li> <a href="post/{{page}}"> {{page}} </a></li>
+        {% for page in pages %}
+        <li> <a href="post/{{page[0]}}"> {{page[1]}} </a></li>
         {% endfor %}
         </ul>
-
-        <div>
-
-            # Hello world
-            - Me
-            - You
-
-        </div>
     </body>
 </html>
